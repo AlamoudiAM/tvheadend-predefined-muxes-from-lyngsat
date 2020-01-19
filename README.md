@@ -8,3 +8,6 @@ next lyngsat pages has been scrapped and generated as predefined muxes (the resu
 * [HD - Eutelsat 7 West A at 7.3°W](https://www.lyngsat.com/hd/Eutelsat-7-West-A.html)
 * [Eutelsat 8 West B at 8.0°W](https://www.lyngsat.com/Eutelsat-8-West-B.html)
 * [HD - Eutelsat 8 West B at 8.0°W](https://www.lyngsat.com/hd/Eutelsat-8-West-B.html)
+
+combine all files in output into one file \
+`rm all.txt && cat * > all.txt`
