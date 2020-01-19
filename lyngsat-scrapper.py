@@ -84,7 +84,13 @@ def write_muxes_to_file(muxes, file_name):
         file_string += '\tINNER_FEC = {}\n'.format(mux[4])
 
         if mux[5]:
-            file_string += '\tINVERSION = {}\n\n'.format(mux[5])
+            if '8PSK' in mux[5]:
+                file_string += '\tINVERSION = PSK/8\n\n'
+            elif 'QPSK' in mux[5]:
+                file_string += '\tINVERSION = QPSK\n\n'
+            else:
+                file_string += '\tINVERSION = {}\n\n'.format(mux[5])
+
         else:
             file_string += '\tINVERSION = AUTO\n\n'
 
